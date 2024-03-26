@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferenças entre HTML e HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-size: 18px;
+        }
+        .html-version {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diferenças entre HTML e HTML5</h1>
+    <table>
+        <tr>
+            <th>Funcionalidade</th>
+            <th>HTML</th>
+            <th>HTML5</th>
+        </tr>
+        <tr>
+            <td>Definição de tipo de documento</td>
+            <td>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</td>
+            <td>&lt;!DOCTYPE html&gt;</td>
+        </tr>
+        <tr>
+            <td>Meta charset</td>
+            <td>&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;</td>
+            <td>&lt;meta charset="UTF-8"&gt;</td>
+        </tr>
+        <tr>
+            <td>Semântica</td>
+            <td>Estruturação usando &lt;div&gt; e &lt;span&gt; com classes para identificar elementos.</td>
+            <td>Introdução de novas tags semânticas como &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;footer&gt;, etc.</td>
+        </tr>
+        <tr>
+            <td>Reprodução de mídia</td>
+            <td>Dependência de plugins (como Flash) para reproduzir vídeos e áudios.</td>
+            <td>Introdução das tags &lt;video&gt; e &lt;audio&gt; para reprodução nativa de vídeos e áudios.</td>
+        </tr>
+        <tr>
+            <td>Armazenamento local</td>
+            <td>Utilização de cookies ou armazenamento em sessão do lado do servidor.</td>
+            <td>Introdução do armazenamento local usando localStorage e sessionStorage.</td>
+        </tr>
+        <tr>
+            <td>Formulários</td>
+            <td>Limitações nos tipos de input e validações complexas.</td>
+            <td>Introdução de novos tipos de input, validações nativas e API para formulários mais avançados.</td>
+        </tr>
+        <tr>
+            <td>Canvas</td>
+            <td>Não suportado.</td>
+            <td>Introdução do elemento &lt;canvas&gt; para desenhar gráficos, animações, etc.</td>
+        </tr>
+    </table>
+</body>
+</html>
