@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Games (HTML5 e CSS2)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   
+    <header>
+        <h1>Loja de Games (HTML5 e CSS2)</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Jogos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="game">
+            <h2>Destaque</h2>
+            <video controls autoplay>
+                <source src="https://media.istockphoto.com/id/1396583215/pt/v%C3%ADdeo/man-goes-to-work-by-bicycle-on-a-tree-lined-street-during-autumn.mp4?s=mp4-640x640-is&k=20&c=YiIbQqaJmZMOdF0e-nAdIP269HmouKMRRhCj39hl4lQ=" type="video/mp4">
+                Seu navegador não suporta vídeo HTML5.
+            </video>
+        </div>
+        <div class="game">
+            <h2>Novidades</h2>
+            <audio controls>
+                <source src="music1.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio HTML5.
+            </audio>
+        </div>
+        <div class="game">
+            <h2>Lançamentos</h2>
+            <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000;"></canvas>
+            <script> var canvas = document.getElementById('myCanvas');   var ctx = canvas.getContext('2d');   //Set the circle parameters
+                var centerX = canvas.width / 2;   var centerY = canvas.height / 2;   var radius = 70;   var startAngle = 0;   var endAngle = 2 * Math.PI;   var anticlockwise = false;   // Draw the circle  
+                ctx.beginPath();   ctx.arc(centerX, centerY, radius, startAngle, endAngle, anticlockwise); ctx.fillStyle = 'blue'; // You can change the color here
+                ctx.fill(); ctx.closePath(); </script>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Loja de Games. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
